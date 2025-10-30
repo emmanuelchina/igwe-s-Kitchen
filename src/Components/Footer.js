@@ -10,7 +10,7 @@ export default function Footer() {
         <a href="https://www.linkedin.com/in/emmanuel-igwe-406301385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
-        <a href="#">
+        <a href="http://wa.me/2349151265480">
           <FontAwesomeIcon icon={faWhatsapp} />
         </a>
       </div>
