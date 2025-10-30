@@ -94,7 +94,7 @@ const products = [
     id: 12,
     name: "Ewedu Soup",
     price: "8000",
-    imageSrc: "img/ewedu.jpeg",
+    imageSrc: "img/Ewedu.jpeg",
     imageAlt:
       "Ewedu soup",
   },
