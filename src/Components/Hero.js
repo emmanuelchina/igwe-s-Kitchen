@@ -4,8 +4,8 @@ export default function Hero() {
   const Lines = ["WELCOME", "TO", "IGWE'S", "KITCHEN"];
 
   return (
-    <div className="Hero">
-      <div className="hero1 text-center">
+    <div className="Hero" >
+      <div className="hero1 text-center" >
         {Lines.map((line, i) => (
           <motion.h1
             key={i}
@@ -32,7 +32,8 @@ export default function Hero() {
                   visible: { opacity: 1, y: 0 },
                 }}
                 transition={{
-                  duration: 2,
+                  duration: 0.5,
+                  repeat:1,
                 }}
                 className="inline-block mx-2"
               >
