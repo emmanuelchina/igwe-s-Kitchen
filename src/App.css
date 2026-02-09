@@ -1,31 +1,4 @@
-.Hero {
-  height: 80vh;
-  background-image: url(/public/img/tatiana-mokhova-MR4747QM9zM-unsplash.jpg);
-  background-size: cover;
-  padding: 0%;
-  margin: 0%;
-
-}
-
-.hero1 {
-  background-color: rgb(0, 0, 0, 0.5);
-  height: 80vh;
-}
-.welcome {
-  font-family: "Sevillana", cursive;
-  font-weight: 900;
-  font-style: normal;
-  color: gold;
-  }
-.About {
-  display: flex;
-  flex-direction: column;
-  padding: 0%;
-  background-image: url(/public/hero.jpg);
-  background-size: cover;
-}
-
-.contact {
-  background-color: black;
-  color: white;
+.About{
+    background-image: url(/public/img/african-salad.jpeg);
+    background-size: cover;
 }

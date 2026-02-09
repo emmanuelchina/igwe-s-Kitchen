@@ -6,7 +6,7 @@ import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg
 export default function Contact() {
   return (
     <div className='contact'>
-    <div className=" bg-gray-100 px-6 py-24 sm:py-32 lg:px-8 text-white">
+    <div className=" bg-orange-50 px-6 py-24 sm:py-32 lg:px-8 text-white">
 
       <div
         aria-hidden="true"
@@ -21,7 +21,7 @@ export default function Contact() {
         />
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-800  sm:text-5xl">Contact Us</h2>
+        <h2 className="text-4xl font-semibold tracking-tight text-balance text-orange-800  sm:text-5xl">Contact Us</h2>
         <p className="mt-2 text-lg/8 text-gray-800 ">Make your order or contact us for more information</p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
