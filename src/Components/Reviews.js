@@ -51,7 +51,7 @@ export default function Content() {
       <div className="absolute inset-0 bg-orange-100" />
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-orange-800 mb-4">
-          What Coustomers Think <br /> About Our Meals
+          What Customers Think <br /> About Our Meals
         </h2>
         <p className="text-gray-800 max-w-xl mb-12">
           Our in this kitchen is to delivers a symphony of flavours and an unforgettable dining experience

@@ -9,3 +9,4 @@
 .float { animation: float 7s ease-in-out infinite; }
 .delay-1000 { animation-delay: 1s; }
 .animate-bounce.slow { animation-duration: 5s; }
+

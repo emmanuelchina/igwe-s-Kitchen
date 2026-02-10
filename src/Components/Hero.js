@@ -2,52 +2,32 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const usePreloadImage = (src) => {
-  const [loaded, setLoaded] = useState(false);
 
-  useEffect(() => {
-    const img = new Image();
-    img.src = src;
-    img.onload = () => setLoaded(true);
-    return () => img.onload = null;
-  }, [src]);
-
-  return loaded;
-};
 
 export default function Hero() {
-  const navigate = useNavigate(); // ✅ Fixed: lowercase variable name
+  const navigate = useNavigate(); 
 
-  const heroImageSrc = "/img/hero-kitchen.jpg"; 
-  const isImageLoaded = usePreloadImage(heroImageSrc);
+  
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <motion.div 
-        className="absolute inset-0 bg-gradient-to-br from-orange-50 via-orange-50/80 to-orange-100"
-        initial={{ opacity: 1 }}
-        animate={{ opacity: isImageLoaded ? 0.3 : 1 }}
-        transition={{ duration: 1.5 }}
-      />
+     <img
+    src="/img/hero-kitchen.jpg"
+    alt="Hero Kitchen"
+    className="absolute inset-0 w-full h-full object-cover"
+    fetchPriority="high"/>
       
-      {isImageLoaded && (
-        <motion.div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImageSrc})` }}
-          initial={{ scale: 1.1, opacity: 0 }}
-          animate={{ scale: 1, opacity: 0.6 }}
-          transition={{ duration: 2, ease: "easeOut" }}
-        />
-      )}
+      
+       <div className="absolute inset-0 bg-white/50 min-h-screen flex items-center">
 
-      {/* Animated Background Elements - Floating Food Emojis */}
+      
       <motion.div 
         className="absolute inset-0 pointer-events-none"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
       >
-        <div className="absolute top-1/4 left-10 w-20 h-20 animate-bounce float text-4xl opacity-20 text-orange-50">welcome</div>
+        <div className="absolute top-1/4 left-10 w-20 h-20 animate-bounce float text-4xl opacity-20 text-orange-50">👑</div>
         <div className="absolute top-1/3 right-20 w-24 h-24 animate-bounce slow delay-1000 text-5xl opacity-30 rotate-12 text-orange-50">welcome</div>
         <div className="absolute bottom-1/4 left-1/4 w-16 h-16 animate-bounce text-3xl opacity-25 -rotate-6 text-orange-50">welcome</div>
         <div className="absolute bottom-1/3 right-1/4 w-20 h-20 animate-bounce slow text-4xl opacity-20 text-orange-50">welcome</div>
@@ -116,7 +96,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-     
+     </div>
     </section>
   );
 }
