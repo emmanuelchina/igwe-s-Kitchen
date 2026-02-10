@@ -85,9 +85,9 @@ export default function Contact() {
   <p>🕒 Mon – Sun: 9:00am – 10:00pm</p>
 </div>
 <div className="flex justify-center space-x-6 mt-8 text-yellow-500 text-2xl">
-      <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
-      <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-      <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
+     <a href="tel:+2349151265480" aria-label="Call">Call Now</a>
+<a href="mailto:info@igweemmanuelchina@gmail.com" aria-label="Email">Email</a>
+<a href="https://wa.me/2349151265480" aria-label="WhatsApp">WhatsApp</a>
     </div>
 
         </div>
