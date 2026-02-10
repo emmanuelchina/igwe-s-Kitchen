@@ -105,8 +105,8 @@ export default function Navbar() {
             className={({ isActive }) =>
               `px-3 py-2 rounded-md ${
                 isActive
-                  ? "bg-gray-800 text-white"
-                  : "text-gray-800 hover:bg-gray-800 hover:text-white"
+                  ? "bg-orange-800 text-white"
+                  : "text-gray-800 hover:bg-orange-800 hover:text-white"
               }`
             }
             onClick={() => setMenuOpen(false)}
