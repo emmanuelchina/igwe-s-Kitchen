@@ -69,7 +69,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Nav links (mobile) */}
+   
       {menuOpen && (
         <div className="flex flex-col mt-4 space-y-2 md:hidden font-semibold">
           <NavLink

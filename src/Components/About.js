@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    // ✅ Fixed: Wrap root div with motion.div
+   
     <motion.div
       className="About"
       initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}  // Fixed y: 50 → y: 0
+      whileInView={{ opacity: 1, y: 0 }}  
       transition={{ duration: 1 }}
       viewport={{ once: false, amount: 0.3 }}
     >
@@ -20,7 +20,7 @@ export default function About() {
         <motion.div
           className="mx-auto max-w-7xl px-6 lg:px-8"
           initial={{ scale: 0.95, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}  // Fixed y: 1 → scale: 1
+          whileInView={{ scale: 1, opacity: 1 }} 
           transition={{ delay: 0.5, duration: 0.9 }}
           viewport={{ once: false }}
         >

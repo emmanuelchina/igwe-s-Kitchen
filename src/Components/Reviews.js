@@ -46,8 +46,8 @@ const testimonials = [
 export default function Content() {
   return (
     <section className="relative overflow-hidden bg-black py-20">
-      {" "}
-      {/* background glow */}{" "}
+  
+    
       <div className="absolute inset-0 bg-orange-100" />
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-orange-800 mb-4">
@@ -57,7 +57,7 @@ export default function Content() {
           Our in this kitchen is to delivers a symphony of flavours and an unforgettable dining experience
         </p>
       </div>
-      {/* marquee */}
+
       <div className="relative flex gap-6 overflow-hidden">
         <motion.div
           className="flex gap-6"
