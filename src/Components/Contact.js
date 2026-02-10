@@ -1,4 +1,4 @@
-import { ChevronDownIcon } from '@heroicons/react/16/solid'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
