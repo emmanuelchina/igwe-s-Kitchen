@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-// Fixed products array with proper href links, consistent image paths, and corrected alt texts
+
 const products = [
   {
     id: 1,
@@ -69,13 +69,13 @@ const products = [
 ]
     
 
-// Framer Motion animation variants
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.08, // Smooth 0.08s stagger for 17 items
+      staggerChildren: 0.08, 
       delayChildren: 0.3,
     },
   },
@@ -98,7 +98,7 @@ const cardVariants = {
 export default function Viewmore() {
   return (
     <div className="bg-orange-50 text-gray-800 pt-10 min-h-screen">
-      {/* Animated Header */}
+  
   <motion.h1 
         className="font-semibold text-orange-800 text-3xl md:text-4xl text-center mb-2"
         initial={{ opacity: 0, y: -30 }}
@@ -120,7 +120,7 @@ export default function Viewmore() {
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 className="sr-only">Products</h2>
 
-        {/* Animated Grid Container */}
+
         <motion.div
           className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-x-6 md:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
           variants={containerVariants}
@@ -150,7 +150,7 @@ export default function Viewmore() {
                   initial={{ scale: 1.1 }}
                   whileHover={{ scale: 1.1 }}
                 />
-                {/* Price badge overlay */}
+           
                 <motion.div 
                   className="absolute top-2 right-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg"
                   initial={{ scale: 0, rotate: -180 }}
@@ -160,7 +160,7 @@ export default function Viewmore() {
                 </motion.div>
               </motion.div>
               
-              {/* Product info with hover color change */}
+          
               <div className="text-center">
                 <motion.h3 
                   className="text-sm md:text-base font-semibold text-gray-800 group-hover:text-orange-600 transition-all duration-300 line-clamp-2"
