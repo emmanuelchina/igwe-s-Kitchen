@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import {   faWhatsapp, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 
 export default function Contact() {
@@ -85,9 +85,10 @@ export default function Contact() {
   <p>🕒 Mon – Sun: 9:00am – 10:00pm</p>
 </div>
 <div className="flex justify-center space-x-6 mt-8 text-yellow-500 text-2xl">
-     <a href="tel:+2349151265480" aria-label="Call">Call Now</a>
-<a href="mailto:info@igweemmanuelchina@gmail.com" aria-label="Email">Email</a>
-<a href="https://wa.me/2349151265480" aria-label="WhatsApp">WhatsApp</a>
+      <a href="https://wa.me/2349151265480"><FontAwesomeIcon icon={faWhatsapp} /></a>
+       <a href="https://www.linkedin.com/in/emmanuel-igwe-406301385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
     </div>
 
         </div>
