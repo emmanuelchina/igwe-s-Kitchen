@@ -34,7 +34,7 @@ export default function About() {
             </p>
 
             <p className="mt-6 text-lg/8 text-gray-800">
-              Indulge in the art of African cuisine at Igwe's Kitchen where
+              Indulge in the art of African cuisine at King's Kitchen where
               every dish delivers a symphony of flavours and an unforgettable
               dining experience
             </p>
